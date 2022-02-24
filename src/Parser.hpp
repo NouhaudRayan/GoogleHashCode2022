@@ -7,13 +7,13 @@ class Parser {
     public:
         Parser(char *file);
         ~Parser();
-        Contributor getContributor() {return _contributor;};
-        Project getProject() {return _project;};
+        std::vector<Contributor> getContributor() {return _contributor;};
+        std::vector<Project> getProject() {return _project;};
 
     protected:
     private:
-        Contributor _contributor;
-        Project _project;
+        std::vector<Contributor> _contributor;
+        std::vector<Project> _project;
 };
 
 #endif /* !PARSER_HPP_ */
