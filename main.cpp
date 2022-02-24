@@ -1,7 +1,7 @@
-#include "Parser.hpp"
+#include "src/Parser.hpp"
 
 int main(int ac, char **av)
 {
-    Parser parser;
+    Parser parser(av[1]);
     Manager manager(parser.getContributor(), parser.getProject());
 }

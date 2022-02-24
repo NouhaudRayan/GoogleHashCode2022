@@ -5,7 +5,7 @@
 
 class Parser {
     public:
-        Parser();
+        Parser(char *file);
         ~Parser();
         Contributor getContributor() {return _contributor;};
         Project getProject() {return _project;};
